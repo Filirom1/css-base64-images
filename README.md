@@ -3,6 +3,8 @@ css-base64-images
 
 Base64 images in your css file.
 
+![Base64](https://github.com/Filirom1/css-base64-images/raw/master/draft.png)
+
 Transform this:
 
     .single-quote {
