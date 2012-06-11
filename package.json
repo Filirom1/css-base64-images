@@ -1,0 +1,20 @@
+{
+  "author": "Filirom1 <filirom1@gmail.com>",
+  "name": "css-b64-images",
+  "description": "Base64 images in your css",
+  "version": "0.1.0",
+  "main": "lib/css-b64-images.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "async": "~0.1.22"
+  },
+  "devDependencies": {
+    "mocha": "~1.1.0"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
