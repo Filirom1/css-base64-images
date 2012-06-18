@@ -42,14 +42,32 @@ Do not work with (a warning is shown, but the process continue)
 
 ## As a library
 
-optimizeFile(cssFile, root, cb)
+### From File
+
+fromFile(cssFile, root, cb)
 
 You must specify the `root` path for absolute URLs to work.
 
     var b64img = require('css-b64-images');
 
-    b64img('/your/www/root/dir/css/your-stylesheet.css', '/your/www/root/dir/', function(err, css){
+    b64img.fromFile('/your/www/root/dir/css/your-stylesheet.css', '/your/www/root/dir/', function(err, css){
       if(err) console.error('Error:', err);
       console.log(css);
     });
 
+### From String
+
+fromString(css, relativePath, rootPath , cb)
+
+    var b64img = require('css-b64-images');
+    var css = fs.readFileSync('/your/www/root/dir/css/your-stylesheet.css');
+
+    b64img.fromString(css, '/your/www/root/dir/css/', '/your/www/root/dir/', function(err, css){
+      if(err) console.error('Error:', err);
+      console.log(css);
+    });
+
+
+## LICENSE
+
+MIT

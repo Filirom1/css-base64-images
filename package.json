@@ -2,7 +2,7 @@
   "author": "Filirom1 <filirom1@gmail.com>",
   "name": "css-b64-images",
   "description": "Base64 images in your css",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "lib/css-b64-images.js",
   "bin": "bin/css-b64-images",
   "repository": {
@@ -19,6 +19,10 @@
   "scripts": {
     "test": "mocha"
   },
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/MIT"
+  }],
   "optionalDependencies": {},
   "engines": {
     "node": "*"
