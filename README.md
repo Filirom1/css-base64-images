@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/Filirom1/css-base64-images.png)](http://travis-ci.org/Filirom1/css-base64-images)
 css-base64-images
 =================
 
