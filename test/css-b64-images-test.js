@@ -33,4 +33,6 @@ function cssShouldBeCorrect(css){
   css.should.include(".external {\n  background: url('http");
   css.should.include(".tooBig {\n  background: url('../img");
   css.should.include(".not-found {\n  background: url('../img");
+
+  css.should.include(".mediatype {\n  background: url('data:image/svg+xml;base64,");
 }

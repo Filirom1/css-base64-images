@@ -46,3 +46,7 @@
 .not-found {
   background: url('../img/nlabal.png');
 }
+
+.mediatype {
+  background: url('../img/dots.svg');
+}
