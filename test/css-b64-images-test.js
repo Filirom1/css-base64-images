@@ -23,6 +23,16 @@ describe('A complex CSS', function(){
       done();
     });
   });
+
+  it('allows regex to be configured', function(done){
+    b64.imgRegex = /url\s?\(['"]?(.*?\?base64)['"]\)/gi
+
+    b64.fromFile(cssFile, relative, root, function(err, css){
+      css.should.include(".single-quote {\n  background: url('../img/background-pattern.gif')");
+      css.should.include(".custom-regex {\n  background: url('data:image/gif;base64,")
+      done();
+    });
+  });
 });
 
 function cssShouldBeCorrect(css){

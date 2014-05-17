@@ -68,6 +68,16 @@ fromString(css, relativePath, rootPath , cb)
       console.log(css);
     });
 
+### Restricting which images are converted
+
+The regex used to select image URLs can be configured to limit which images are converted.
+
+    var b64img = require('css-b64-images');
+
+    // Select URLs with a "?base64" query string
+    b64.imgRegex = /url\s?\(['"]?(.*?\?base64)['"]\)/gi;
+
+    b64img.fromString(css, '/root/css', '/root', function(err, css) { /* ... */ });
 
 ## LICENSE
 
