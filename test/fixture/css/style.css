@@ -50,3 +50,7 @@
 .mediatype {
   background: url('../img/dots.svg');
 }
+
+.custom-regex {
+  background: url('../img/background-pattern.gif?base64');
+}
