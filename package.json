@@ -10,7 +10,6 @@
     "url": "https://github.com/Filirom1/css-base64-images.git"
   },
   "dependencies": {
-    "async": "~0.1.22"
   },
   "devDependencies": {
     "mocha": "~1.1.0",
