@@ -2,7 +2,7 @@
   "author": "Filirom1 <filirom1@gmail.com>",
   "name": "css-b64-images",
   "description": "Base64 images in your css",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "main": "lib/css-b64-images.js",
   "bin": "bin/css-b64-images",
   "repository": {

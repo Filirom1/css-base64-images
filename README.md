@@ -28,7 +28,7 @@ Works with:
 
 Do not work with (a warning is shown, but the process continue)
 
-* File bigger than 4Ko
+* File bigger than 4Ko (configurable)
 * external urls: url("http://my-company.ext/img/background-pattern.gif");
 * not found images
 
@@ -45,7 +45,7 @@ Do not work with (a warning is shown, but the process continue)
 
 ### From File
 
-fromFile(cssFile, root, cb)
+fromFile(cssFile, root, [options,] cb)
 
 You must specify the `root` path for absolute URLs to work.
 
@@ -58,7 +58,7 @@ You must specify the `root` path for absolute URLs to work.
 
 ### From String
 
-fromString(css, relativePath, rootPath , cb)
+fromString(css, relativePath, rootPath, [options,] cb)
 
     var b64img = require('css-b64-images');
     var css = fs.readFileSync('/your/www/root/dir/css/your-stylesheet.css');
@@ -67,6 +67,10 @@ fromString(css, relativePath, rootPath , cb)
       if(err) console.error('Error:', err);
       console.log(css);
     });
+
+### Options
+
+* maxSize: (default 4096) bigger images are not base64 in the CSS
 
 
 ## LICENSE
